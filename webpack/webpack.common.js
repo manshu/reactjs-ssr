@@ -7,7 +7,6 @@ const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer') // help tailwindcss to work
 
 module.exports = {
-  entry: path.resolve(__dirname, '..', './src/index.jsx'),
   resolve: {
     extensions: ['.jsx', '.js'],
   },
@@ -64,7 +63,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, '..', './public/index.html'),
-      minify: true,
     }),
     new MiniCssExtractPlugin({
       filename: 'assets/css/[name].[contenthash].css',
