@@ -1,10 +1,10 @@
 import * as ReactDOM from 'react-dom/client'
 import './assets/css/tailwind.css'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
 import App from './App'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    <BrowserRouter>
+    <Router>
         <App />
-    </BrowserRouter>
+    </Router>
 )
